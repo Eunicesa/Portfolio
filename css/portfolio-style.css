@@ -5,6 +5,9 @@ background-color: #FFF;
 margin: 0;
 }
 
+
+
+
 .Ccontainer {
 	width: 100%;
 	margin: auto;
@@ -17,6 +20,77 @@ height: 50px;
 
 
 
+}
+
+
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
+
+.site-header {
+  min-height: 100vh;
+  background: #6b6b6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#symbol {
+	width:500px;
+	height:500px;
+	margin-right: 1%;
+  
+}
+#path {
+   stroke-dasharray:500;
+   stroke-dashoffset:500;
+   
+}
+@-webkit-keyframes dash {
+    from  {
+        stroke-dashoffset:500;
+    }
+    to {
+        stroke-dashoffset:0;
+    }
+}
+svg #path{
+    -webkit-animation: dash 4s linear  infinite;
+    
+}
+  
+ .header-title {
+    font-size: 4em;
+    margin: 0;
+    color: #fff;
+    margin-right: 1%;
+  }
+
+  .header-control {
+    transform: rotate(90deg);
+    margin-top: 50px;
+  }
+  .header-control-btn {
+    color: #fff;
+    font-size: 6em;
+    text-decoration: none;
+  }
+}
+
+
+
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateX(0); }
+  40% { transform: translateX(-20px); }
+  60% { transform: translateX(-10px); }
 }
 
 .group:after {
